@@ -15,9 +15,9 @@ function App() {
   async function handleAddRepository() {
     
     const response = await api.post('repositories', {
-      title: 'Test',
-      url: 'Test',
-      techs: ['Test', 'Test']
+      title: 'Repositório React',
+      url: 'https://github.com/hbalardin/gostack-challenge-02-reactjs-concepts',
+      techs: ['Javascript', 'React JS']
     });
 
     setRepositories([...repositories, response.data]);
